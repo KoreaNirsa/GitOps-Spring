@@ -37,7 +37,7 @@ jobs:
           tags: |
             ${{ env.IMAGE_NAME }}:${{ steps.meta.outputs.tag }}
 
-      - name: Checkout gitops repo
+      - name: Checkout gitops repo 
         uses: actions/checkout@v4
         with:
           repository: ${{ env.GITOPS_REPO }}
