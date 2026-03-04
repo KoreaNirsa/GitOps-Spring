@@ -57,7 +57,7 @@ jobs:
       - name: Commit and push changes to gitops repo
         run: |
           cd gitops
-          git config user.name "islandtim"
+          git config user.name "KoreaNirsa"
           git config user.email "islandtim@naver.com"
           git add "${{ env.KUSTOMIZE_FILE }}"
           git commit -m "chore: deploy demo image ${{ steps.meta.outputs.tag }}" || exit 0
